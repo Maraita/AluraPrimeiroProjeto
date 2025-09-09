@@ -2,7 +2,7 @@
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
 //ExibirMensagemDeBoasVindas();
 //ExibirOpcoesDoMenu();
-List<string> listaDasBandas = new List<string> { "U2", "Beatles", "Deep Purple", "Yes"};
+List<string> listaDasBandas = new List<string> { "U2", "Beatles", "Deep Purple", "Yes", "Dire Straits"};
 void ExibirLogo()
 {
     Console.WriteLine(@"
