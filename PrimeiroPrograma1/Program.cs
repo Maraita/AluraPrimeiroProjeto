@@ -24,7 +24,8 @@ void ExibirOpcoesDoMenu()
 
   Console.Write("\nDigite a sua opção:  ");
   string opcaoEscolhida = Console.ReadLine()!;
-  int opcaoEscolhidaNumerica = int.Parse(opcaoEscolhida);
+  
+    int opcaoEscolhidaNumerica = int.Parse(opcaoEscolhida);
   
     switch (opcaoEscolhidaNumerica)
     {
