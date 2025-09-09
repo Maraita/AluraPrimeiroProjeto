@@ -2,7 +2,7 @@
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
 //ExibirMensagemDeBoasVindas();
 //ExibirOpcoesDoMenu();
-List<string> listaDasBandas = new List<string>();
+List<string> listaDasBandas = new List<string> { "U2", "Beatles", "Deep Purple", "Yes"};
 void ExibirLogo()
 {
     Console.WriteLine(@"
@@ -51,7 +51,7 @@ void RegistrarBanda()
     Console.Clear();
     Console.WriteLine("*********************");
     Console.WriteLine("Registro de bandas");
-    Console.WriteLine("*********************");
+    Console.WriteLine("*********************\n");
     Console.Write("Digite o nome da banda que deseja registrar: ");
     string nomeDaBanda = Console.ReadLine()!;
     listaDasBandas.Add(nomeDaBanda);
@@ -68,13 +68,13 @@ void MostrarBandasRegistradas()
     Console.Clear();
     Console.WriteLine("***************************************");
     Console.WriteLine("Exibindo todas as bandas registradas");
-    Console.WriteLine("***************************************");
+    Console.WriteLine("***************************************\n");
     
     for (int i = 0; i < listaDasBandas.Count; i++)
     {
         Console.WriteLine($"Banda: {listaDasBandas[i]}");
     }
-    Console.WriteLine("Digite uma tecla para voltar ao menu principal");
+    Console.WriteLine("\nDigite uma tecla para voltar ao menu principal");
     Console.ReadKey();
     Console.Clear();
     ExibirOpcoesDoMenu();
